@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Relax Outback | Premium Pool &amp; Deck | Bettendorf, IA&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- BRAND DESIGN TOKENS (RELAX OUTBACK UPDATED) --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--primary: #336699;<span class="Apple-converted-space">      </span>/* Logo Primary */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--secondary: #99ccff;<span class="Apple-converted-space">    </span>/* Logo Light Blue */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--deep-navy: #0f172a;<span class="Apple-converted-space">    </span>/* Contrast/Header */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--slate: #475569;<span class="Apple-converted-space">        </span>/* Text Neutral */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--bg-off-white: #f5f7fa; /* Main Background */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--warm-sand: #f2e9d8;<span class="Apple-converted-space">    </span>/* Texture/Outdoor Feel */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--aqua: #14b8c6; <span class="Apple-converted-space">        </span>/* Lead Button/Highlights */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--success: #16a34a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--error: #dc2626;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--white: #ffffff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--shadow: 0 20px 50px rgba(15, 23, 42, 0.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- BASE STYLING --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>* { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--bg-off-white);<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--slate);<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.7;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1, h2, h3, h4 { color: var(--deep-navy); text-transform: uppercase; letter-spacing: 2px; line-height: 1.1; font-weight: 800; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container { max-width: 1300px; margin: 0 auto; padding: 0 40px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.divider { width: 50px; height: 4px; background: var(--aqua); margin: 25px 0; border-radius: 2px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- ANIMATIONS --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.reveal { opacity: 0; transform: translateY(40px); transition: var(--transition); transition-duration: 0.9s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.reveal.active { opacity: 1; transform: translateY(0); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- HEADER --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed; top: 0; width: 100%; z-index: 1000; padding: 15px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(15, 23, 42, 0.96); backdrop-filter: blur(12px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid rgba(153, 204, 255, 0.15);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.header-flex { display: flex; justify-content: space-between; align-items: center; }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Updated Logo Placeholder for Relax Outback */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.logo-group { display: flex; align-items: center; gap: 12px; text-decoration: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.logo-stack { display: flex; flex-direction: column; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.logo-txt-top { color: var(--white); font-weight: 900; font-size: 1.4rem; letter-spacing: 2px; line-height: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.logo-txt-btm { color: var(--secondary); font-size: 0.6rem; font-weight: 700; letter-spacing: 3px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>nav ul { display: flex; gap: 30px; list-style: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>nav a { color: var(--white); text-decoration: none; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; opacity: 0.8; transition: var(--transition); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>nav a:hover { color: var(--secondary); opacity: 1; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn-aqua {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--aqua); border: none; color: var(--white);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 12px 28px; font-size: 0.75rem; font-weight: 900;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: var(--transition);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn-aqua:hover { background: var(--secondary); color: var(--deep-navy); transform: translateY(-2px); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- HERO --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.hero {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 90vh; display: flex; align-items: center; justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.5)),<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&amp;fit=crop&amp;q=80&amp;w=2000');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-size: cover; background-position: center; color: var(--white); text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.hero h1 { font-size: clamp(3rem, 7vw, 5.5rem); color: var(--white); margin-bottom: 15px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.hero p { font-size: 1.1rem; opacity: 0.9; color: var(--secondary); letter-spacing: 4px; text-transform: uppercase; font-weight: 600; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- WIZARD FORM (RELAX OUTBACK STYLED) --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.wizard-container { max-width: 1100px; margin: -80px auto 100px; position: relative; z-index: 10; display: grid; grid-template-columns: 200px 1fr 160px; box-shadow: var(--shadow); overflow: hidden; }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.wizard-left { background: var(--deep-navy); color: var(--white); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.step-id { border: 1.5px solid var(--secondary); border-radius: 50%; width: 70px; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.step-id strong { font-size: 1.8rem; }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.wizard-body { background: var(--white); padding: 50px 60px; border-right: 1px solid var(--bg-off-white); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.wizard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.opt-btn {<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 16px; border: 2px solid var(--bg-off-white); cursor: pointer; transition: var(--transition);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 0.8rem;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.opt-btn:hover { background: var(--bg-off-white); border-color: var(--secondary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.opt-btn.active { border-color: var(--primary); background: #eef5ff; color: var(--primary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.opt-btn::before { content: ''; width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--secondary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.opt-btn.active::before { background: var(--aqua); border-color: var(--aqua); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.wizard-next { background: var(--aqua); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 900; transition: var(--transition); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.wizard-next:hover { background: var(--primary); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- FEATURED SECTION --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.feat-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; align-items: center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.image-reveal-wrap { position: relative; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); height: 550px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.image-reveal-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 2s ease; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.image-reveal-wrap:hover img { transform: scale(1.08); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.badge { position: absolute; top: 30px; left: 30px; background: var(--warm-sand); padding: 10px 20px; font-weight: 900; color: var(--primary); font-size: 0.7rem; letter-spacing: 2px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- GRID: THREE CARDS --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.triple-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 100px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-impact { position: relative; overflow: hidden; height: 400px; display: flex; align-items: flex-end; padding: 40px; border-radius: 4px; cursor: pointer; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-impact img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; transition: var(--transition); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-impact::after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(15,23,42,0), rgba(15,23,42,0.9)); z-index: 2; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-impact:hover img { transform: scale(1.1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-info { position: relative; z-index: 3; color: var(--white); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-info h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 5px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-info span { color: var(--secondary); font-size: 0.7rem; font-weight: 900; letter-spacing: 2px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- DARK TESTIMONIALS SECTION --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.testimonial-block { background: var(--deep-navy); color: var(--white); padding: 120px 0; position: relative; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.testi-flex { display: flex; gap: 100px; align-items: center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.testi-content { flex: 1.2; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.testi-content h2 { color: var(--white); font-size: 3rem; margin-bottom: 30px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.testi-list { flex: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.quote-box { margin-bottom: 50px; border-left: 2px solid var(--aqua); padding-left: 30px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.quote-box p { font-style: italic; font-size: 1.15rem; margin-bottom: 10px; opacity: 0.8; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.quote-box cite { display: block; font-weight: 900; color: var(--secondary); letter-spacing: 1px; font-style: normal; font-size: 0.85rem; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- TAB SWITCHER: MODERN LAYOUT --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tab-section-header { text-align: center; margin-bottom: 60px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modern-tabs { display: grid; grid-template-columns: 320px 1fr; background: var(--white); box-shadow: var(--shadow); border-radius: 6px; overflow: hidden; min-height: 500px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tab-nav-panel { background: var(--warm-sand); border-right: 1px solid rgba(0,0,0,0.05); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tab-item { padding: 35px 40px; border-bottom: 1px solid rgba(0,0,0,0.05); cursor: pointer; transition: var(--transition); opacity: 0.6; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tab-item.active { background: var(--white); opacity: 1; border-right: 4px solid var(--aqua); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tab-item h5 { font-size: 0.75rem; color: var(--primary); margin-bottom: 10px; }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tab-view { position: relative; display: flex; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.pane { position: absolute; inset: 0; padding: 80px; display: flex; flex-direction: column; justify-content: center; opacity: 0; pointer-events: none; transition: var(--transition); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.pane.active { opacity: 1; pointer-events: all; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.pane h3 { font-size: 3rem; margin-bottom: 25px; color: var(--deep-navy); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.pane-image-under { position: absolute; bottom: 0; right: 0; width: 60%; opacity: 0.15; z-index: -1; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- ICON TRIAD --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.icon-bar { padding: 120px 0; background: var(--warm-sand); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.icon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.icon-item i { font-size: 2.5rem; color: var(--aqua); margin-bottom: 25px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- FOOTER --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>footer { background: var(--deep-navy); color: var(--white); padding: 100px 0 60px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.f-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 50px; margin-bottom: 80px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.f-col h4 { color: var(--white); font-size: 1.4rem; margin-bottom: 25px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.f-links h6 { color: var(--secondary); font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 25px; font-weight: 800; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.f-links ul { list-style: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.f-links li { font-size: 0.9rem; opacity: 0.6; margin-bottom: 15px; cursor: pointer; transition: 0.3s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.f-links li:hover { color: var(--aqua); opacity: 1; padding-left: 5px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.f-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; display: flex; justify-content: space-between; font-size: 0.8rem; opacity: 0.5; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- MOBILE REFINEMENTS --- */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@media (max-width: 950px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.hero h1 { font-size: 2.8rem; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.header-inner, .f-grid, .testi-flex, .triple-grid, .modern-tabs, .icon-grid, .wizard-container { grid-template-columns: 1fr; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.wizard-container { margin-top: -30px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.image-reveal-wrap { height: 350px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.wizard-left, .tab-nav-panel { display: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.pane { padding: 40px; position: static; height: auto; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>nav { display: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container header-flex"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="/" class="logo-group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;!-- Using Primary and Aqua in the Logo Drawing --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;svg viewBox="0 0 100 100" style="width: 50px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;path d="M50 20 Q 80 15, 80 45 T 50 70 T 20 45 T 50 20" fill="none" stroke="var(--primary)" stroke-width="5" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;path d="M40 35 Q 50 25, 60 35 T 70 45" fill="none" stroke="var(--aqua)" stroke-width="4" stroke-linecap="round" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;circle cx="50" cy="50" r="10" fill="var(--secondary)" opacity="0.4" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="logo-stack"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="logo-txt-top"&gt;RELAX &lt;b style="color:var(--aqua)"&gt;OUTBACK&lt;/b&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="logo-txt-btm"&gt;Pool &amp; Deck Specialists&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#"&gt;Fiberglass Pools&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#"&gt;Decks &amp; Porches&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#"&gt;Gallery&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#"&gt;Our Process&lt;/a&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="btn-aqua" onclick="location.href='#contact'"&gt;Request Consultation&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="reveal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Elevated Living Spaces&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Beyond the Water.&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- NEW LEAD CAPTURE SYSTEM (COLORED TO LOGO) --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="wizard-container reveal active"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="wizard-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="step-id"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span style="font-size:0.6rem; opacity:0.5"&gt;STEP&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong id="wStepNum"&gt;01&lt;/strong&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="wizard-body"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 id="wTitle"&gt;What are we looking for?&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="wizard-grid" id="wContent"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="opt-btn active" onclick="setWizard(this)"&gt;New Fiberglass Pool&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="opt-btn" onclick="setWizard(this)"&gt;Custom Deck Build&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="opt-btn" onclick="setWizard(this)"&gt;Porch &amp; Overhangs&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="opt-btn" onclick="setWizard(this)"&gt;Maintenance &amp; Renovation&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="wizard-next" onclick="advanceWiz()"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span id="wizBtn"&gt;NEXT&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section class="container feat-layout"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="image-reveal-wrap reveal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="https://images.unsplash.com/photo-1594498653385-d5172c532c00?auto=format&amp;fit=crop&amp;q=80&amp;w=1200" alt="Main Work"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="badge"&gt;ESTABLISHED CRAFTSMANSHIP&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="content-panel reveal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;The Future of Pool Longevity: &lt;br&gt;&lt;span style="color:var(--primary)"&gt;Fiberglass Innovation&lt;/span&gt;&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="divider"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p style="font-size: 1.25rem; color: var(--deep-navy); font-weight: 500; margin-bottom: 20px;"&gt;Serving Bettendorf and the Quad Cities with specialized placement and finishing.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p style="margin-bottom: 25px;"&gt;Relax Outback specializes in taking your vision and handling the complex reality of excavation management and pool placement. We install high-grade fiberglass pool systems—engineered to save thousands in lifetime maintenance while providing a smooth, porcelain-like feel. Unlike standard concrete, fiberglass installation is clean, fast, and stays beautiful for decades.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="btn-aqua"&gt;Discover Fiberglass&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container triple-grid reveal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-impact"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="https://images.unsplash.com/photo-1574241088497-7f97576a0d61?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="T1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="card-info"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span&gt;PORTFOLIO&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Fiberglass Installations&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-impact"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="https://images.unsplash.com/photo-1591825200241-8e40fca44a67?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="T2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="card-info"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span&gt;DECK DESIGN&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Custom Engineered Living&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card-impact"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="T3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="card-info"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span&gt;CONSTRUCTION&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Project Financing Available&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section class="testimonial-block"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container testi-flex reveal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="testi-content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2&gt;The Standard for IA/IL &lt;br&gt;Home Transformations.&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="divider"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p style="opacity:0.7; font-size: 1.15rem;"&gt;Whether we are layouting your pool or framing your cedar deck, we manage every shovel and screw to meet the high-standard climate requirements of the Midwest.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="testi-list"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="quote-box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;"The best investment in our Davenport property. Relax Outback managed the entire footprint—pool to porch. The aqua blue finish is breathtaking."&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;cite&gt;AMANDA L. — QUAD CITIES&lt;/cite&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="quote-box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;"Fast, professional, and kept a remarkably clean worksite. Finally a contractor that actually builds for IA winters."&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;cite&gt;ERIC W. — BETTENDORF, IA&lt;/cite&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section class="container" style="padding-top: 150px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="tab-section-header reveal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Complete Outdoor Competencies&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- VERTICAL BRANDED TABS --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="modern-tabs reveal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="tab-nav-panel"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="tab-item active" onclick="showPane(0, this)"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h5&gt;01 / INSTALLATION&lt;/h5&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Fiberglass placements &amp; precise plumbing layout.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="tab-item" onclick="showPane(1, this)"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h5&gt;02 / LIVING AREAS&lt;/h5&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;High-grade composite &amp; hardwood deck builds.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="tab-item" onclick="showPane(2, this)"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h5&gt;03 / OVERHANGS&lt;/h5&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Weather-protection patio enclosures.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="tab-view"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="pane active"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;High-Performance &lt;br&gt;Pool Placement.&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="divider"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Using the logo colors and fiberglass specs, we perform every layout adjustment to fit your backyard’s unique footprint. Clean, efficient, and resilient.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button class="btn-aqua" style="width:fit-content; margin-top:30px;"&gt;Request Design Info&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-water pane-image-under"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;!-- Panes 2 &amp; 3 hidden by logic --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="pane"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Decks Tailored &lt;br&gt;to Your Footprint.&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="divider"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Custom cedar and high-spec composite decking built to match how you plan to use the space around your water features.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-tools pane-image-under"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="pane"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Extended Seasons &lt;br&gt;&amp; Sun Shading.&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="divider"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Protection and architectural shade. Porches and overhangs designed to fit the visual language of your existing home structure.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-home pane-image-under"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section class="icon-bar"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container icon-grid reveal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="icon-item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-ruler-combined"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;PRECISION DESIGN&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p style="opacity:0.6"&gt;Every pool and deck layout custom designed for site specific drainage and utility.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="icon-item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-vial-circle-check"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;CRAFT QUALITY&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p style="opacity:0.6"&gt;We manage heavy excavation coordination through final polish on deck finish work.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="icon-item"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-leaf"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;LIFETIME SAVINGS&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p style="opacity:0.6"&gt;Fiberglass maintenance requires significantly less chemistry than standard gunite/concrete.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container f-grid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="f-logo"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 style="margin-bottom:15px;"&gt;RELAX &lt;span style="color:var(--aqua)"&gt;OUTBACK&lt;/span&gt;&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p style="opacity: 0.5; font-size:0.8rem;"&gt;Quality Inground Solutions&lt;br&gt;Bettendorf, IA | Quad Cities Area&lt;br&gt;(563) 555-0XXX&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div style="display:flex; gap:20px; margin-top:25px; font-size:1.3rem; opacity:0.8;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-facebook-square"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fab fa-linkedin"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="f-links"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h6&gt;OUR SERVICES&lt;/h6&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Fiberglass Pools&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Composite Decks&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Porch Construction&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Landscape Coordination&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="f-links"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h6&gt;LOCATIONS&lt;/h6&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Bettendorf, IA&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Davenport, IA&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Moline, IL&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Rock Island, IL&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="f-links"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h6&gt;NEW INQUIRIES&lt;/h6&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p style="font-size: 0.8rem; opacity: 0.4; line-height: 2;"&gt;Contact our project office to secure an on-site build consultation for the upcoming season.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="btn-aqua" style="margin-top:20px; width:100%;"&gt;START THE FORM&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container f-bottom"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;&amp;copy; 2025 Relax Outback | Premium Iowa &amp; Illinois Outdoor Living&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Designated IA Registered Contractor #0XXXX&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Smooth Reveal trigger</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const observer = new IntersectionObserver((entries) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>entries.forEach(entry =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (entry.isIntersecting) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>entry.target.classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}, { threshold: 0.1 });</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.querySelectorAll('.reveal').forEach(el =&gt; observer.observe(el));</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Multi-Step Lead Wizard Functional JS</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let currentWizStep = 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function advanceWiz() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const num = document.getElementById('wStepNum');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const title = document.getElementById('wTitle');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const grid = document.getElementById('wContent');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const btn = document.getElementById('wizBtn');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if(currentWizStep &gt;= 3) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>alert("Consultation Reserved! One of our Davenport specialists will contact you.");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>location.reload();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>currentWizStep++;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>num.innerText = "0" + currentWizStep;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>grid.style.opacity = '0';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if(currentWizStep === 2) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>title.innerText = "Expected Start Season?";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>grid.innerHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="opt-btn active" onclick="setWizard(this)"&gt;Urgent / Next 30 Days&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="opt-btn" onclick="setWizard(this)"&gt;Next Spring&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="opt-btn" onclick="setWizard(this)"&gt;Late Summer 2025&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="opt-btn" onclick="setWizard(this)"&gt;Still in Budget Phase&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else if(currentWizStep === 3) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>title.innerText = "Submit For Final Expert Quote";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>grid.innerHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div style="grid-column: span 2;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;input type="text" placeholder="Your Name*" style="width:100%; padding:15px; border:2px solid var(--bg-off-white); margin-bottom:12px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;input type="email" placeholder="Preferred Email Address*" style="width:100%; padding:15px; border:2px solid var(--bg-off-white);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>btn.innerText = "SEND REQUEST";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>grid.style.opacity = '1';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 300);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function setWizard(el) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const p = el.parentNode.children;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>for(let opt of p) opt.classList.remove('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>el.classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Horizontal Panel Tab Control</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function showPane(idx, el) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const list = document.querySelectorAll('.tab-item');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const panes = document.querySelectorAll('.pane');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>list.forEach(t =&gt; t.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>panes.forEach(p =&gt; p.classList.remove('active'));</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>el.classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>panes[idx].classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
